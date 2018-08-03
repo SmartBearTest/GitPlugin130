@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="b6e8bd53-756b-4799-8e06-9e76a95c0a46" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b6e8bd53-756b-4799-8e06-9e76a95c0a46fileName">TestCase-1</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="groovy" name="Groovy Script" id="eafbb08e-a047-4622-a5f3-45d0905acbfa">
+    <con:settings/>
+    <con:config>
+      <script>/*def tStep = context.testCase.getTestStepByName("TestStepName")
+def runner = tStep.run(testRunner, context)
+log.info ("runner status ....... : " + runner.hasResponse())*/
+
+
+//def response = context.expand( '${Get - Request 1#Response}' )
+//log.info(response)
+
+def tStep = context.testCase.getTestStepByName("Get - Request 1")
+tStep.disabled = true</script>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Get - Request 1" id="36d55095-2dc8-4cb0-b07e-26614c0c13fd" disabled="true">
+    <con:settings/>
+    <con:config service="http://httpbin.org" resourcePath="/get" methodName="Get" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Get - Request 1" id="7dde52cf-5efc-4591-ba2c-a4321fce1c74" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://httpbin.org</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://httpbin.org/get</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>eafbb08e-a047-4622-a5f3-45d0905acbfa</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>
