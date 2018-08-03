@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:interface xsi:type="con:RestService" id="6f3531af-1335-4eef-b37c-9cc23eb02081" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://httpbin.org" type="rest" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<con:interface xsi:type="con:RestService" id="6f3531af-1335-4eef-b37c-9cc23eb02081" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://httpbin.org" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="6f3531af-1335-4eef-b37c-9cc23eb02081fileName">http%3A%2F%2Fhttpbin.org</con:setting>
   </con:settings>
