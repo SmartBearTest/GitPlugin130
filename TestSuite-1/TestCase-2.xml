@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="edb7a090-1d68-4bf3-8fab-528a281a3e55" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 2" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+<con:testCase id="34a27175-3a4d-4464-96f1-e19c97ec0023" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 2" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
-    <con:setting id="edb7a090-1d68-4bf3-8fab-528a281a3e55fileName">TestCase-2</con:setting>
+    <con:setting id="34a27175-3a4d-4464-96f1-e19c97ec0023fileName">TestCase-2</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
-  <con:testStep type="groovy" name="Groovy Script" id="7e6393c0-5a3c-48e1-ab9c-f33c37585ff3">
+  <con:testStep type="delay" name="Delay" id="6b5b9af1-983b-4866-b9b1-6606c3a3f3bb">
     <con:settings/>
     <con:config>
-      <script/>
+      <delay>1000</delay>
     </con:config>
   </con:testStep>
   <con:properties/>
